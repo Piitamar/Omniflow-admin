@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": "usr_001",
+      "name": "Alex Kim",
+      "email": "alex.kim@acmecommerce.com",
+      "password": "securepassword123",
+      "role": "Admin",
+      "avatar": "https://i.pravatar.cc/150?img=12",
+      "createdAt": "2026-01-15T08:30:00Z"
+    },
+    {
+      "id": "usr_002",
+      "name": "Emily Carter",
+      "email": "emily.carter@acmecommerce.com",
+      "password": "anothersecurepassword456",
+      "role": "Manager",
+      "avatar": "https://i.pravatar.cc/150?img=32",
+      "createdAt": "2026-02-03T10:15:00Z"
+    },
+    {
+      "id": "usr_003",
+      "name": "Daniel Park",
+      "email": "daniel.park@acmecommerce.com",
+      "password": "yetanothersecurepassword789",
+      "role": "Staff",
+      "avatar": "https://i.pravatar.cc/150?img=11",
+      "createdAt": "2026-03-21T14:20:00Z"
+    },
+    {
+      "id": "usr_004",
+      "name": "Sophia Lee",
+      "email": "sophia.lee@acmecommerce.com",
+      "password": "securepassword101112",
+      "role": "Staff",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "createdAt": "2026-04-09T09:45:00Z"
+    },
+    {
+      "id": "usr_005",
+      "name": "James Wilson",
+      "email": "james.wilson@acmecommerce.com",
+      "password": "securepassword131415",
+      "role": "Manager",
+      "avatar": "https://i.pravatar.cc/150?img=68",
+      "createdAt": "2026-05-18T16:10:00Z"
+    }
+  ]
+}
