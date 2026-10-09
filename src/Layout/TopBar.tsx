@@ -1,13 +1,13 @@
 import LoginModal from "../Features/User/LoginModal";
 import Search from "./Search";
-import UserLogin from "./UserLogin";
+import UserLogin from "../Features/User/UserLogin";
 import { useState } from "react"; 
+import { useUIStore } from "../UIstore";
 
 export default function TopBar() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const [user, setUser] = useState(localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")!) : null);
-  console.log("Current user:", user);
-
+  const user = useUIStore((state) => state.loginUser);
+  
   return (
     <header className="flex h-18 items-center border-b border-slate-200 bg-white">
       {/* Logo */}

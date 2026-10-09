@@ -1,15 +1,19 @@
-interface User {
-  email: string;
+import type { LoginUser } from "../../UIstore";
+
+interface ApiUser extends LoginUser {
   password: string;
 }
 
-const login = async (email: string, password: string): Promise<User | null> => {
+const login = async (email: string, password: string): Promise<LoginUser | null> => {
   try {
     const response = await fetch("http://localhost:3001/users");
-    const users: User[] = await response.json();
+    if (!response.ok) return null;
+    const users: ApiUser[] = await response.json();
 
     const user = users.find((u) => u.email === email && u.password === password);
-    return user || null;
+    if (!user) return null;
+    const { password: _password, ...loginUser } = user;
+    return loginUser;
 
   } catch (error) {
     console.error("Error logging in:", error);

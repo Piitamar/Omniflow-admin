@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Eye, EyeOff, LockKeyhole, Mail, X } from "lucide-react";
 import { login } from "./api";
+import { useUIStore } from "../../UIstore";
 
 interface LoginModalProps {
   isOpen: boolean;
@@ -8,8 +9,8 @@ interface LoginModalProps {
 }
 
 interface User {
-    email: string;
-    password: string;
+  email: string;
+  password: string;
 }
 
 export default function LoginModal({
@@ -21,12 +22,18 @@ export default function LoginModal({
     email: "",
     password: "",
   });
+  const { setLoginUser } = useUIStore();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const result = login(user.email, user.password);
-    console.log("Login result:", result);
+    const result = await login(user.email, user.password);
+    if (!result) {
+      alert("Invalid email or password");
+      return;
+    } 
     localStorage.setItem("user", JSON.stringify(result));
+    setLoginUser(result);
+    onClose();
   };
 
   if (!isOpen) return null;

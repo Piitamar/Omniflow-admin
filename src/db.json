@@ -45,5 +45,517 @@
       "avatar": "https://i.pravatar.cc/150?img=68",
       "createdAt": "2026-05-18T16:10:00Z"
     }
+  ],
+
+  "workspaces": [
+    {
+      "id": "ws_001",
+      "name": "Acme Commerce",
+      "logo": "A"
+    }
+  ],
+
+  "accountStatus": [
+    {
+      "userId": "usr_001",
+      "totalRevenue": 124592,
+      "revenueChange": 12.5,
+      "totalOrders": 8492,
+      "ordersChange": 8.2,
+      "conversionRate": 3.82,
+      "conversionChange": 2.4,
+      "activeUsers": 24800,
+      "activeUsersChange": 18.7,
+      "grossRevenue": 84318,
+      "netRevenue": 71924,
+      "totalSales": 124592
+    },
+    {
+      "userId": "usr_002",
+      "totalRevenue": 87430,
+      "revenueChange": 7.8,
+      "totalOrders": 6215,
+      "ordersChange": 5.6,
+      "conversionRate": 3.41,
+      "conversionChange": 1.8,
+      "activeUsers": 18200,
+      "activeUsersChange": 11.2,
+      "grossRevenue": 61240,
+      "netRevenue": 54890,
+      "totalSales": 87430
+    }
+  ],
+
+  "revenueHistory": [
+    {
+      "id": "rev_001",
+      "userId": "usr_001",
+      "date": "2026-10-01",
+      "revenue": 4280,
+      "previousRevenue": 3910
+    },
+    {
+      "id": "rev_002",
+      "userId": "usr_001",
+      "date": "2026-10-02",
+      "revenue": 4710,
+      "previousRevenue": 4200
+    },
+    {
+      "id": "rev_003",
+      "userId": "usr_001",
+      "date": "2026-10-03",
+      "revenue": 5284,
+      "previousRevenue": 4480
+    },
+    {
+      "id": "rev_004",
+      "userId": "usr_001",
+      "date": "2026-10-04",
+      "revenue": 6120,
+      "previousRevenue": 5210
+    },
+    {
+      "id": "rev_005",
+      "userId": "usr_001",
+      "date": "2026-10-05",
+      "revenue": 5840,
+      "previousRevenue": 5500
+    },
+    {
+      "id": "rev_006",
+      "userId": "usr_001",
+      "date": "2026-10-06",
+      "revenue": 6900,
+      "previousRevenue": 6210
+    },
+    {
+      "id": "rev_007",
+      "userId": "usr_001",
+      "date": "2026-10-07",
+      "revenue": 7420,
+      "previousRevenue": 6800
+    }
+  ],
+
+  "categorySales": [
+    {
+      "id": "cat_001",
+      "userId": "usr_001",
+      "category": "Electronics",
+      "percentage": 42
+    },
+    {
+      "id": "cat_002",
+      "userId": "usr_001",
+      "category": "Fashion",
+      "percentage": 28
+    },
+    {
+      "id": "cat_003",
+      "userId": "usr_001",
+      "category": "Home & Living",
+      "percentage": 18
+    },
+    {
+      "id": "cat_004",
+      "userId": "usr_001",
+      "category": "Beauty",
+      "percentage": 12
+    }
+  ],
+
+  "products": [
+  {
+    "id": "prod_001",
+    "name": "Wireless Noise Cancelling Headphones",
+    "sku": "ELEC-001",
+    "category": "Electronics",
+    "price": 249,
+    "stock": 42,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    "description": "Premium wireless headphones with active noise cancellation.",
+    "createdAt": "2026-08-12T09:30:00Z"
+  },
+  {
+    "id": "prod_002",
+    "name": "Mechanical Keyboard",
+    "sku": "ELEC-002",
+    "category": "Electronics",
+    "price": 129,
+    "stock": 86,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+    "description": "Compact mechanical keyboard designed for productivity.",
+    "createdAt": "2026-08-18T11:20:00Z"
+  },
+  {
+    "id": "prod_003",
+    "name": "Minimal Leather Backpack",
+    "sku": "FASH-001",
+    "category": "Fashion",
+    "price": 89,
+    "stock": 24,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+    "description": "Minimal everyday backpack with a premium leather finish.",
+    "createdAt": "2026-08-25T14:10:00Z"
+  },
+  {
+    "id": "prod_004",
+    "name": "Classic Oversized Hoodie",
+    "sku": "FASH-002",
+    "category": "Fashion",
+    "price": 64,
+    "stock": 57,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+    "description": "Soft oversized hoodie with a relaxed everyday fit.",
+    "createdAt": "2026-09-01T10:00:00Z"
+  },
+  {
+    "id": "prod_005",
+    "name": "Ceramic Table Lamp",
+    "sku": "HOME-001",
+    "category": "Home & Living",
+    "price": 72,
+    "stock": 18,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+    "description": "Modern ceramic table lamp for warm ambient lighting.",
+    "createdAt": "2026-09-04T08:45:00Z"
+  },
+  {
+    "id": "prod_006",
+    "name": "Minimal Ceramic Vase",
+    "sku": "HOME-002",
+    "category": "Home & Living",
+    "price": 38,
+    "stock": 9,
+    "status": "low_stock",
+    "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d",
+    "description": "Minimal ceramic vase for modern interiors.",
+    "createdAt": "2026-09-08T13:15:00Z"
+  },
+  {
+    "id": "prod_007",
+    "name": "Hydrating Face Serum",
+    "sku": "BEAU-001",
+    "category": "Beauty",
+    "price": 42,
+    "stock": 73,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
+    "description": "Lightweight hydrating serum for daily skincare.",
+    "createdAt": "2026-09-12T15:40:00Z"
+  },
+  {
+    "id": "prod_008",
+    "name": "Daily Moisturizer",
+    "sku": "BEAU-002",
+    "category": "Beauty",
+    "price": 35,
+    "stock": 0,
+    "status": "out_of_stock",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+    "description": "Lightweight daily moisturizer suitable for normal skin.",
+    "createdAt": "2026-09-15T09:20:00Z"
+  },
+  {
+    "id": "prod_009",
+    "name": "Smart Fitness Watch",
+    "sku": "ELEC-003",
+    "category": "Electronics",
+    "price": 199,
+    "stock": 31,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    "description": "Smart fitness watch with health and activity tracking.",
+    "createdAt": "2026-09-18T12:00:00Z"
+  },
+  {
+    "id": "prod_010",
+    "name": "Portable Bluetooth Speaker",
+    "sku": "ELEC-004",
+    "category": "Electronics",
+    "price": 79,
+    "stock": 46,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+    "description": "Portable Bluetooth speaker with rich sound and long battery life.",
+    "createdAt": "2026-09-21T16:30:00Z"
+  },
+  {
+    "id": "prod_011",
+    "name": "Canvas Tote Bag",
+    "sku": "FASH-003",
+    "category": "Fashion",
+    "price": 29,
+    "stock": 112,
+    "status": "active",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363",
+    "description": "Durable canvas tote bag for everyday use.",
+    "createdAt": "2026-09-24T10:50:00Z"
+  },
+  {
+    "id": "prod_012",
+    "name": "Scented Soy Candle",
+    "sku": "HOME-003",
+    "category": "Home & Living",
+    "price": 24,
+    "stock": 6,
+    "status": "low_stock",
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+    "description": "Hand-poured soy candle with a subtle relaxing fragrance.",
+    "createdAt": "2026-09-28T11:35:00Z"
+  }
+],
+
+  "orders": [
+    {
+      "userId": "usr_001",
+      "id": "ord_10482",
+      "orderNumber": "OM-10482",
+      "customerId": "cus_001",
+      "type": "Consumer electronics",
+      "status": "processing",
+      "itemsCount": 3,
+      "total": 428,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T08:30:00Z"
+    },
+    {
+      "userId": "usr_001",
+      "id": "ord_10476",
+      "orderNumber": "OM-10476",
+      "customerId": "cus_002",
+      "type": "Consumer electronics",
+      "status": "processing",
+      "itemsCount": 2,
+      "total": 316,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T08:10:00Z"
+    },
+    {
+      "userId": "usr_001",
+      "id": "ord_10468",
+      "orderNumber": "OM-10468",
+      "customerId": "cus_003",
+      "type": "Consumer electronics",
+      "status": "processing",
+      "itemsCount": 1,
+      "total": 249,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T07:55:00Z"
+    },
+    {
+      "userId": "usr_001",
+      "id": "ord_10457",
+      "orderNumber": "OM-10457",
+      "customerId": "cus_004",
+      "type": "Consumer electronics",
+      "status": "processing",
+      "itemsCount": 2,
+      "total": 520,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T07:20:00Z"
+    },
+    {
+      "userId": "usr_002",
+      "id": "ord_10479",
+      "orderNumber": "OM-10479",
+      "customerId": "cus_005",
+      "type": "Home & lifestyle order",
+      "status": "pending",
+      "itemsCount": 1,
+      "total": 89,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T07:10:00Z"
+    },
+    {
+      "userId": "usr_002",
+      "id": "ord_10471",
+      "orderNumber": "OM-10471",
+      "customerId": "cus_006",
+      "type": "Home & lifestyle order",
+      "status": "pending",
+      "itemsCount": 4,
+      "total": 742,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T06:50:00Z"
+    },
+    {
+      "userId": "usr_002",
+      "id": "ord_10464",
+      "orderNumber": "OM-10464",
+      "customerId": "cus_007",
+      "type": "Home & lifestyle order",
+      "status": "pending",
+      "itemsCount": 2,
+      "total": 184,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-08T06:30:00Z"
+    },
+
+    {
+      "userId": "usr_003",
+      "id": "ord_10455",
+      "orderNumber": "OM-10455",
+      "customerId": "cus_008",
+      "type": "Fashion order",
+      "status": "shipped",
+      "itemsCount": 2,
+      "total": 156,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-07T15:40:00Z"
+    },
+    {
+      "userId": "usr_003",
+      "id": "ord_10451",
+      "orderNumber": "OM-10451",
+      "customerId": "cus_009",
+      "type": "Beauty order",
+      "status": "shipped",
+      "itemsCount": 3,
+      "total": 278,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-07T14:20:00Z"
+    },
+    {
+      "userId": "usr_003",
+      "id": "ord_10443",
+      "orderNumber": "OM-10443",
+      "customerId": "cus_010",
+      "type": "Electronics order",
+      "status": "delivered",
+      "itemsCount": 1,
+      "total": 899,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-07T11:15:00Z"
+    },
+    {
+      "userId": "usr_003",
+      "id": "ord_10438",
+      "orderNumber": "OM-10438",
+      "customerId": "cus_011",
+      "type": "Fashion order",
+      "status": "delivered",
+      "itemsCount": 4,
+      "total": 342,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-07T09:45:00Z"
+    },
+    {
+      "userId": "usr_003",
+      "id": "ord_10429",
+      "orderNumber": "OM-10429",
+      "customerId": "cus_012",
+      "type": "Home & lifestyle order",
+      "status": "cancelled",
+      "itemsCount": 2,
+      "total": 215,
+      "currency": "USD",
+      "workspaceId": "ws_001",
+      "createdAt": "2026-10-06T16:30:00Z"
+    }
+  ],
+
+  "customers": [
+    {
+      "id": "cus_001",
+      "name": "Sophia Turner",
+      "email": "sophia.turner@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=44",
+      "status": "active"
+    },
+    {
+      "id": "cus_002",
+      "name": "Olivia Martin",
+      "email": "olivia.martin@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=45",
+      "status": "active"
+    },
+    {
+      "id": "cus_003",
+      "name": "Mia Thompson",
+      "email": "mia.thompson@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=46",
+      "status": "active"
+    },
+    {
+      "id": "cus_004",
+      "name": "Ava Robinson",
+      "email": "ava.robinson@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=47",
+      "status": "active"
+    },
+    {
+      "id": "cus_005",
+      "name": "Ethan Brooks",
+      "email": "ethan.brooks@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=49",
+      "status": "active"
+    },
+    {
+      "id": "cus_006",
+      "name": "Noah Williams",
+      "email": "noah.williams@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=51",
+      "status": "active"
+    },
+    {
+      "id": "cus_007",
+      "name": "Liam Anderson",
+      "email": "liam.anderson@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=52",
+      "status": "active"
+    },
+    {
+      "id": "cus_008",
+      "name": "Emma Davis",
+      "email": "emma.davis@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=53",
+      "status": "active"
+    },
+    {
+      "id": "cus_009",
+      "name": "James Miller",
+      "email": "james.miller@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=54",
+      "status": "active"
+    },
+    {
+      "id": "cus_010",
+      "name": "Charlotte Wilson",
+      "email": "charlotte.wilson@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=55",
+      "status": "active"
+    },
+    {
+      "id": "cus_011",
+      "name": "Henry Moore",
+      "email": "henry.moore@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=56",
+      "status": "active"
+    },
+    {
+      "id": "cus_012",
+      "name": "Amelia Taylor",
+      "email": "amelia.taylor@example.com",
+      "avatar": "https://i.pravatar.cc/150?img=57",
+      "status": "inactive"
+    }
   ]
 }
