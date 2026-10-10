@@ -8,38 +8,49 @@ import {
 } from "lucide-react";
 
 import { NavLink } from "react-router-dom";
-
-const navigationItems = [
-  {
-    label: "Dashboard",
-    path: "/",
-    icon: BarChart3,
-  },
-  {
-    label: "Products",
-    path: "/products",
-    icon: Box,
-    count: 12,
-  },
-  {
-    label: "Orders",
-    path: "/orders",
-    icon: ShoppingBag,
-    count: 8,
-  },
-  {
-    label: "Customers",
-    path: "/customers",
-    icon: Users,
-  },
-  {
-    label: "Settings",
-    path: "/settings",
-    icon: Settings,
-  },
-];
+import { useProducts } from "../Features/Products/useProducts";
+import { useOrders } from "../Features/Orders/useOrders";
+import { useUIStore } from "../UIstore";
 
 export default function Navigation() {
+  const { loginUser } = useUIStore();
+  const { products } = useProducts({
+    userId: loginUser?.id
+  });
+  const { orders } = useOrders({ userId: loginUser?.id });
+  const productCount = products.length;
+  const orderCount = orders.length;
+
+  const navigationItems = [
+    {
+      label: "Dashboard",
+      path: "/",
+      icon: BarChart3,
+    },
+    {
+      label: "Products",
+      path: "/products",
+      icon: Box,
+      count: productCount,
+    },
+    {
+      label: "Orders",
+      path: "/orders",
+      icon: ShoppingBag,
+      count: orderCount,
+    },
+    {
+      label: "Customers",
+      path: "/customers",
+      icon: Users,
+    },
+    {
+      label: "Settings",
+      path: "/settings",
+      icon: Settings,
+    },
+  ];
+
   return (
     <nav className="px-4">
       <p className="mb-4 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
@@ -70,7 +81,7 @@ export default function Navigation() {
                 {item.label}
               </span>
 
-              {item.count && (
+              {item.count !== undefined && (
                 <span className="text-xs text-slate-400">
                   {item.count}
                 </span>

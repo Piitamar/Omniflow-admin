@@ -5,13 +5,13 @@ import Sidebar from "./SideBar";
 
 export default function AppLayout() {
   return (
-    <main className="min-h-screen bg-[#f8f9fc] text-slate-900">
+    <main className="flex h-screen flex-col overflow-hidden bg-[#f8f9fc] text-slate-900">
       <TopBar />
 
-      <section className="flex">
+      <section className="flex min-h-0 flex-1 overflow-hidden">
         <Sidebar />
 
-        <main className="min-w-0 flex-1">
+        <main className="min-h-0 min-w-0 flex-1 overflow-y-auto">
           <Outlet />
         </main>
       </section>

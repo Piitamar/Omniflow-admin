@@ -13,3 +13,11 @@ export function formatNumber(value: number) {
 export function formatChange(value: number) {
   return `+${value}%`;
 }
+
+export function formatDate(date: string) {
+  return new Date(`${date}T12:00:00`).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}

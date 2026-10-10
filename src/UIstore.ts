@@ -9,7 +9,7 @@ export interface LoginUser {
 }
 
 interface UIStore {
-    loginUser: LoginUser | null;
+    loginUser: LoginUser | undefined | null;
     setLoginUser: (user: LoginUser) => void;
     clearLoginUser: () => void;
 }

@@ -46,7 +46,6 @@
       "createdAt": "2026-05-18T16:10:00Z"
     }
   ],
-
   "workspaces": [
     {
       "id": "ws_001",
@@ -54,7 +53,6 @@
       "logo": "A"
     }
   ],
-
   "accountStatus": [
     {
       "userId": "usr_001",
@@ -85,7 +83,6 @@
       "totalSales": 87430
     }
   ],
-
   "revenueHistory": [
     {
       "id": "rev_001",
@@ -137,7 +134,6 @@
       "previousRevenue": 6800
     }
   ],
-
   "categorySales": [
     {
       "id": "cat_001",
@@ -164,154 +160,164 @@
       "percentage": 12
     }
   ],
-
   "products": [
-  {
-    "id": "prod_001",
-    "name": "Wireless Noise Cancelling Headphones",
-    "sku": "ELEC-001",
-    "category": "Electronics",
-    "price": 249,
-    "stock": 42,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-    "description": "Premium wireless headphones with active noise cancellation.",
-    "createdAt": "2026-08-12T09:30:00Z"
-  },
-  {
-    "id": "prod_002",
-    "name": "Mechanical Keyboard",
-    "sku": "ELEC-002",
-    "category": "Electronics",
-    "price": 129,
-    "stock": 86,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
-    "description": "Compact mechanical keyboard designed for productivity.",
-    "createdAt": "2026-08-18T11:20:00Z"
-  },
-  {
-    "id": "prod_003",
-    "name": "Minimal Leather Backpack",
-    "sku": "FASH-001",
-    "category": "Fashion",
-    "price": 89,
-    "stock": 24,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
-    "description": "Minimal everyday backpack with a premium leather finish.",
-    "createdAt": "2026-08-25T14:10:00Z"
-  },
-  {
-    "id": "prod_004",
-    "name": "Classic Oversized Hoodie",
-    "sku": "FASH-002",
-    "category": "Fashion",
-    "price": 64,
-    "stock": 57,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
-    "description": "Soft oversized hoodie with a relaxed everyday fit.",
-    "createdAt": "2026-09-01T10:00:00Z"
-  },
-  {
-    "id": "prod_005",
-    "name": "Ceramic Table Lamp",
-    "sku": "HOME-001",
-    "category": "Home & Living",
-    "price": 72,
-    "stock": 18,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
-    "description": "Modern ceramic table lamp for warm ambient lighting.",
-    "createdAt": "2026-09-04T08:45:00Z"
-  },
-  {
-    "id": "prod_006",
-    "name": "Minimal Ceramic Vase",
-    "sku": "HOME-002",
-    "category": "Home & Living",
-    "price": 38,
-    "stock": 9,
-    "status": "low_stock",
-    "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d",
-    "description": "Minimal ceramic vase for modern interiors.",
-    "createdAt": "2026-09-08T13:15:00Z"
-  },
-  {
-    "id": "prod_007",
-    "name": "Hydrating Face Serum",
-    "sku": "BEAU-001",
-    "category": "Beauty",
-    "price": 42,
-    "stock": 73,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
-    "description": "Lightweight hydrating serum for daily skincare.",
-    "createdAt": "2026-09-12T15:40:00Z"
-  },
-  {
-    "id": "prod_008",
-    "name": "Daily Moisturizer",
-    "sku": "BEAU-002",
-    "category": "Beauty",
-    "price": 35,
-    "stock": 0,
-    "status": "out_of_stock",
-    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
-    "description": "Lightweight daily moisturizer suitable for normal skin.",
-    "createdAt": "2026-09-15T09:20:00Z"
-  },
-  {
-    "id": "prod_009",
-    "name": "Smart Fitness Watch",
-    "sku": "ELEC-003",
-    "category": "Electronics",
-    "price": 199,
-    "stock": 31,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-    "description": "Smart fitness watch with health and activity tracking.",
-    "createdAt": "2026-09-18T12:00:00Z"
-  },
-  {
-    "id": "prod_010",
-    "name": "Portable Bluetooth Speaker",
-    "sku": "ELEC-004",
-    "category": "Electronics",
-    "price": 79,
-    "stock": 46,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
-    "description": "Portable Bluetooth speaker with rich sound and long battery life.",
-    "createdAt": "2026-09-21T16:30:00Z"
-  },
-  {
-    "id": "prod_011",
-    "name": "Canvas Tote Bag",
-    "sku": "FASH-003",
-    "category": "Fashion",
-    "price": 29,
-    "stock": 112,
-    "status": "active",
-    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363",
-    "description": "Durable canvas tote bag for everyday use.",
-    "createdAt": "2026-09-24T10:50:00Z"
-  },
-  {
-    "id": "prod_012",
-    "name": "Scented Soy Candle",
-    "sku": "HOME-003",
-    "category": "Home & Living",
-    "price": 24,
-    "stock": 6,
-    "status": "low_stock",
-    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59",
-    "description": "Hand-poured soy candle with a subtle relaxing fragrance.",
-    "createdAt": "2026-09-28T11:35:00Z"
-  }
-],
-
+    {
+      "id": "prod_001",
+      "userId": "usr_001",
+      "name": "Wireless Noise Cancelling Headphones",
+      "sku": "ELEC-001",
+      "category": "Electronics",
+      "price": 249,
+      "stock": 42,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "description": "Premium wireless headphones with active noise cancellation.",
+      "createdAt": "2026-08-12T09:30:00Z"
+    },
+    {
+      "id": "prod_002",
+      "userId": "usr_001",
+      "name": "Mechanical Keyboard",
+      "sku": "ELEC-002",
+      "category": "Electronics",
+      "price": 129,
+      "stock": 86,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "description": "Compact mechanical keyboard designed for productivity.",
+      "createdAt": "2026-08-18T11:20:00Z"
+    },
+    {
+      "id": "prod_003",
+      "userId": "usr_001",
+      "name": "Minimal Leather Backpack",
+      "sku": "FASH-001",
+      "category": "Fashion",
+      "price": 89,
+      "stock": 24,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "description": "Minimal everyday backpack with a premium leather finish.",
+      "createdAt": "2026-08-25T14:10:00Z"
+    },
+    {
+      "id": "prod_004",
+      "userId": "usr_001",
+      "name": "Classic Oversized Hoodie",
+      "sku": "FASH-002",
+      "category": "Fashion",
+      "price": 64,
+      "stock": 57,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+      "description": "Soft oversized hoodie with a relaxed everyday fit.",
+      "createdAt": "2026-09-01T10:00:00Z"
+    },
+    {
+      "id": "prod_005",
+      "userId": "usr_001",
+      "name": "Ceramic Table Lamp",
+      "sku": "HOME-001",
+      "category": "Home & Living",
+      "price": 72,
+      "stock": 18,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+      "description": "Modern ceramic table lamp for warm ambient lighting.",
+      "createdAt": "2026-09-04T08:45:00Z"
+    },
+    {
+      "id": "prod_006",
+      "userId": "usr_002",
+      "name": "Minimal Ceramic Vase",
+      "sku": "HOME-002",
+      "category": "Home & Living",
+      "price": 38,
+      "stock": 9,
+      "status": "low_stock",
+      "image": "https://images.unsplash.com/photo-1578500494198-246f612d3b3d",
+      "description": "Minimal ceramic vase for modern interiors.",
+      "createdAt": "2026-09-08T13:15:00Z"
+    },
+    {
+      "id": "prod_007",
+      "userId": "usr_002",
+      "name": "Hydrating Face Serum",
+      "sku": "BEAU-001",
+      "category": "Beauty",
+      "price": 42,
+      "stock": 73,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be",
+      "description": "Lightweight hydrating serum for daily skincare.",
+      "createdAt": "2026-09-12T15:40:00Z"
+    },
+    {
+      "id": "prod_008",
+      "userId": "usr_002",
+      "name": "Daily Moisturizer",
+      "sku": "BEAU-002",
+      "category": "Beauty",
+      "price": 35,
+      "stock": 0,
+      "status": "out_of_stock",
+      "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+      "description": "Lightweight daily moisturizer suitable for normal skin.",
+      "createdAt": "2026-09-15T09:20:00Z"
+    },
+    {
+      "id": "prod_009",
+      "userId": "usr_002",
+      "name": "Smart Fitness Watch",
+      "sku": "ELEC-003",
+      "category": "Electronics",
+      "price": 199,
+      "stock": 31,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "description": "Smart fitness watch with health and activity tracking.",
+      "createdAt": "2026-09-18T12:00:00Z"
+    },
+    {
+      "id": "prod_010",
+      "userId": "usr_002",
+      "name": "Portable Bluetooth Speaker",
+      "sku": "ELEC-004",
+      "category": "Electronics",
+      "price": 79,
+      "stock": 46,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+      "description": "Portable Bluetooth speaker with rich sound and long battery life.",
+      "createdAt": "2026-09-21T16:30:00Z"
+    },
+    {
+      "id": "prod_011",
+      "userId": "usr_002",
+      "name": "Canvas Tote Bag",
+      "sku": "FASH-003",
+      "category": "Fashion",
+      "price": 29,
+      "stock": 112,
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1544816155-12df9643f363",
+      "description": "Durable canvas tote bag for everyday use.",
+      "createdAt": "2026-09-24T10:50:00Z"
+    },
+    {
+      "id": "prod_012",
+      "userId": "usr_002",
+      "name": "Scented Soy Candle",
+      "sku": "HOME-003",
+      "category": "Home & Living",
+      "price": 24,
+      "stock": 6,
+      "status": "low_stock",
+      "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+      "description": "Hand-poured soy candle with a subtle relaxing fragrance.",
+      "createdAt": "2026-09-28T11:35:00Z"
+    }
+  ],
   "orders": [
     {
       "userId": "usr_001",
@@ -332,7 +338,7 @@
       "orderNumber": "OM-10476",
       "customerId": "cus_002",
       "type": "Consumer electronics",
-      "status": "processing",
+      "status": "cancelled",
       "itemsCount": 2,
       "total": 316,
       "currency": "USD",
@@ -345,7 +351,7 @@
       "orderNumber": "OM-10468",
       "customerId": "cus_003",
       "type": "Consumer electronics",
-      "status": "processing",
+      "status": "completed",
       "itemsCount": 1,
       "total": 249,
       "currency": "USD",
@@ -358,7 +364,7 @@
       "orderNumber": "OM-10457",
       "customerId": "cus_004",
       "type": "Consumer electronics",
-      "status": "processing",
+      "status": "pending",
       "itemsCount": 2,
       "total": 520,
       "currency": "USD",
@@ -366,12 +372,12 @@
       "createdAt": "2026-10-08T07:20:00Z"
     },
     {
-      "userId": "usr_002",
+      "userId": "usr_001",
       "id": "ord_10479",
       "orderNumber": "OM-10479",
       "customerId": "cus_005",
       "type": "Home & lifestyle order",
-      "status": "pending",
+      "status": "shipped",
       "itemsCount": 1,
       "total": 89,
       "currency": "USD",
@@ -379,12 +385,12 @@
       "createdAt": "2026-10-08T07:10:00Z"
     },
     {
-      "userId": "usr_002",
+      "userId": "usr_001",
       "id": "ord_10471",
       "orderNumber": "OM-10471",
       "customerId": "cus_006",
       "type": "Home & lifestyle order",
-      "status": "pending",
+      "status": "completed",
       "itemsCount": 4,
       "total": 742,
       "currency": "USD",
@@ -404,7 +410,6 @@
       "workspaceId": "ws_001",
       "createdAt": "2026-10-08T06:30:00Z"
     },
-
     {
       "userId": "usr_003",
       "id": "ord_10455",
@@ -471,7 +476,6 @@
       "createdAt": "2026-10-06T16:30:00Z"
     }
   ],
-
   "customers": [
     {
       "id": "cus_001",
