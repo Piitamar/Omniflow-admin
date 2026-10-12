@@ -2,7 +2,6 @@ import {
   BarChart3,
   Box,
   ShoppingBag,
-  Users,
   Settings,
   ChevronRight,
 } from "lucide-react";
@@ -38,11 +37,6 @@ export default function Navigation() {
       path: "/orders",
       icon: ShoppingBag,
       count: orderCount,
-    },
-    {
-      label: "Customers",
-      path: "/customers",
-      icon: Users,
     },
     {
       label: "Settings",

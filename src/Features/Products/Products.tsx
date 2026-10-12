@@ -10,13 +10,15 @@ import Search from "../../Layout/Search";
 import { formatCurrency } from "../Shared/formatters";
 import { useProducts } from "./useProducts";
 import { useUIStore } from "../../UIstore";
+import type { Product } from "./types";
+import AddProductModal, { type AddProductFormData } from "./AddProductModal";
 
 export default function Products() {
   const { loginUser } = useUIStore()
-  const { products } = useProducts({
+  const { products, setProducts } = useProducts({
     userId: loginUser?.id,
   });
-   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
 
   const totalProducts = products.length;
   const activeProducts = products.filter(
@@ -28,6 +30,26 @@ export default function Products() {
   const outOfStockProducts = products.filter(
     (product) => product.stock === 0,
   ).length;
+
+  const handleAddProduct = (form: AddProductFormData) => {
+    const newProduct: Product = {
+      sku: form.sku,
+      name: form.name,
+      price: form.basePrice,
+      image: form.images[0]
+        ? URL.createObjectURL(form.images[0])
+        : "",
+      category: form.category,
+      stock: form.trackQuantity ? form.quantityAvailable : 0,
+      status: "active",
+      createdAt: new Date().toISOString(),
+    };
+
+    setProducts((prev) => [...prev, newProduct]);
+    setIsAddModalOpen(false);
+
+    console.log("Products:", newProduct);
+  };
 
   return (
     <div className="min-h-full bg-[#f8f9fc] px-6 py-7 text-slate-900 lg:px-10">
@@ -243,7 +265,11 @@ export default function Products() {
       </div>
 
       {/* Modal sẽ được nối với component hiện có sau */}
-      {/* isAddModalOpen */}
+      <AddProductModal
+        isOpen={isAddModalOpen}
+        onClose={() => setIsAddModalOpen(false)}
+        onSave={handleAddProduct}
+      />
     </div>
   );
 }

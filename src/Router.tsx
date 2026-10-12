@@ -6,7 +6,7 @@ import { Dashboard } from "./Features/Dashboard/Dashboard";
 import  Products  from "./Features/Products/Products";
 import Orders from "./Features/Orders/Orders";
 import { Customers } from "./Features/Dashboard/Dashboard";
-import { Settings } from "./Features/Dashboard/Dashboard";
+import  Settings  from "./Features/Settings/Settings";
 
 export const router = createBrowserRouter([
   {
